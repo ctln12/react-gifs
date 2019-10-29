@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 
 class Gif extends Component {
   render() {
-    const { selectedGifId } = this.props;
+    const { sourceId } = this.props;
+    const src = `http://giphygifs.s3.amazonaws.com/media/${sourceId}/giphy.gif`;
     return (
-      <div className="selected-gif">
-        <img className="gif" src={`http://giphygifs.s3.amazonaws.com/media/${selectedGifId}/giphy.gif`} alt="gif" />
-      </div>
+        <img className="gif" src={src} />
     );
   }
 }
