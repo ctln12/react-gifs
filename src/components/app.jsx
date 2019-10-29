@@ -32,7 +32,7 @@ class App extends Component {
   render () {
     const { selectedGifId, gifs } = this.state;
     return (
-      <div className="app">
+      <div>
 
         <div className="left-scene">
 
