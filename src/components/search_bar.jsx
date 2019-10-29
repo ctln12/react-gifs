@@ -1,3 +1,5 @@
+/* eslint react/destructuring-assignment: off */
+
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
@@ -7,7 +9,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <input type="text" className="form-control form-search" placeholder="Search GIFs" onChange={e => this.handleChange(e)} />
+      <input type="text" className="form-control form-search" placeholder="Search GIFs" onChange={this.handleChange} />
     );
   }
 }
