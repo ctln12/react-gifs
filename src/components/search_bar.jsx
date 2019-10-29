@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
+  onChange = (e) => {
+    this.props.onChange(e);
+  };
+
   render() {
     return (
-      <div className="search-bar">
-        <p>Hello from the SearchBar component!</p>
-      </div>
+      <input type="text" className="form-control form-search" onChange={e => this.onChange(e)} />
     );
   }
 }
